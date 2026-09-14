@@ -1,5 +1,4 @@
-﻿Console.WriteLine("Hello, World!");
-// System för kurser och studerande
+﻿// System för kurser och studerande
 //en kurs har flera studerande
 //en student kan gå flera kurser
 //minst två klasser - student och course
@@ -26,3 +25,5 @@
 //Tostring med studentens namn
 
 // Regler som gör uppgiten 
+
+
