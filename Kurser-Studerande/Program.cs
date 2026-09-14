@@ -1,28 +1,22 @@
-﻿// System för kurser och studerande
-//en kurs har flera studerande
-//en student kan gå flera kurser
-//minst två klasser - student och course
+﻿Student Khalid = new("Khalid Arain");
+Student Mehwash = new("Mehwash Chaudry");
 
-//Följande ska vara för COURSE
-//fält: Name, en kapactet MaxSeats (max antal platser), och en lista Students.
+Student Amar = new("Amar");
+Student Yaser = new("Yaser");
 
-//Metod enroll (Student) - anmäler en studerande till kursen, om det finns plats.
+Course Chemistry = new("Chemistry");
 
-//Metod Remove(student) - tar bort studenten ur kursen
 
-//Metod RollCall() - skriver ut alla studerande i kursen
+Chemistry.enroll(Khalid);
+Chemistry.enroll(Mehwash);
+Chemistry.enroll(Amar);
+Chemistry.enroll(Yaser);
 
-//en tostring() som ger "Kursnamn (x/y platser)".
+Chemistry.Remove(Yaser);
 
-//Följande ska vara för STUDENT
-//Fält: Name och en lista Courses (String och list)
+Console.WriteLine("Chemistry:\nStudent list;");
 
-//Metod Join(course) - går med i en kurs.
-//Metod Leave (course) - lämnar kurs
-
-//Metod Schedule() - Skriver ut kurserna som studenten går
-
-//Tostring med studentens namn
-
-// Regler som gör uppgiten 
-
+for (int i = 0; i< Chemistry.Students.Count; i++)
+{
+    Console.WriteLine(Chemistry.Students[i].Name);
+}

@@ -16,12 +16,18 @@ public class Course
 
     public void enroll(Student student)
     {
-        if (Students.Count>= maxSeats)
+        if (Students.Count >= maxSeats + 1)
         {
-            return;
+            Console.WriteLine("Kursen är full");
+
         }
-        
+
         Students.Add(student);
+        Console.WriteLine("Studenten har anmälts till kursen");
     } 
-    //if finns plats, då anmäla till kursen. else säga finns inte plats
+  
+  public void Remove(Student rstudents)
+      {
+        Students.Remove(rstudents);
+    }
 }
