@@ -26,4 +26,3 @@
 
 // Regler som gör uppgiten 
 
-
