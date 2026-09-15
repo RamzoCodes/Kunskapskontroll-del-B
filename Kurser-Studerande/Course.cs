@@ -15,7 +15,7 @@ public class Course
 
     public void enroll(Student student)
     {
-        if (Students.Count >= maxSeats && Students.Contains(student))
+        if (Students.Count >= maxSeats || Students.Contains(student))
         {
             Console.WriteLine("Kursen är full");
 

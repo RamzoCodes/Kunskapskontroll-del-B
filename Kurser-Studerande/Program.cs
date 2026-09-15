@@ -20,8 +20,3 @@ Chemistry.Remove(Yaser);
 Console.WriteLine("Chemistry:\nStudent list;");
 
 Chemistry.RollCall();
-
-for (int i = 0; i < Chemistry.Students.Count; i++)
-{
-    Console.WriteLine(Chemistry.Students[i].Name);
-}
