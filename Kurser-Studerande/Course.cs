@@ -29,9 +29,10 @@ public class Course
         
     }
 
-    public void Remove(Student rstudents)
+    public void Remove(Student removeStudents)
     {
-        Students.Remove(rstudents);
+        Students.Remove(removeStudents);
+        removeStudents.Course.Remove(this); //Tar bort från båda sidorna
     }
 
     public void RollCall() //Skriver ut alla studerande i kursen med hjälp av for loop!
