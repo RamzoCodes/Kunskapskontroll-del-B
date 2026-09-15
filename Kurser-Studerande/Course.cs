@@ -23,6 +23,7 @@ public class Course
         else
         {
             Students.Add(student);
+            student.Course.Add(this); //lägger till från båda håll
         Console.WriteLine("Studenten har anmälts till kursen");
         }
         
