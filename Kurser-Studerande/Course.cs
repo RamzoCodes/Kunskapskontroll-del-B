@@ -1,5 +1,4 @@
-//ska skriva kurser 
-//först börja med en class
+//Mallen för ALLA kurser
 
 public class Course
 {
@@ -16,18 +15,30 @@ public class Course
 
     public void enroll(Student student)
     {
-        if (Students.Count >= maxSeats + 1)
+        if (Students.Count >= maxSeats && Students.Contains(student))
         {
             Console.WriteLine("Kursen är full");
 
         }
-
-        Students.Add(student);
+        else
+        {
+            Students.Add(student);
         Console.WriteLine("Studenten har anmälts till kursen");
-    } 
-  
-  public void Remove(Student rstudents)
-      {
+        }
+        
+    }
+
+    public void Remove(Student rstudents)
+    {
         Students.Remove(rstudents);
     }
+
+    public void RollCall() //Skriver ut alla studerande i kursen med hjälp av for loop!
+    {
+        for (int i = 0; i < Students.Count; i++)
+        {
+            Console.WriteLine(Students[i].Name);
+        }
+    }
+    
 }
