@@ -42,5 +42,9 @@ public class Course
             Console.WriteLine(Students[i].Name);
         }
     }
-    
+
+    public override string ToString()
+    {
+        return ($"{Name} ({Students.Count}/{maxSeats})");
+    }
 }
